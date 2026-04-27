@@ -11,7 +11,7 @@
 | **Adhiraj** | Project lead — UE5, Blueprints, 3D engine, terrain, rendering |
 | **Rajguru** | Python & Research Engineer — aerodynamics, TCP bridge, telemetry, PID, RL |
 
-17–18 year old students from Goa, India. Starting First Year engineering in ~2 months. Goal: build an impressive open-source project over 18 months to land a research internship at IIT Bombay, IIT Kanpur, IIT Madras, or IIST Trivandrum aerospace/UAV labs.
+17–18 year old students from Goa, India. Starting First Year BSc in Physics in ~2 months. Goal: build an impressive open-source project over 18 months to land a research internship at IIT Bombay, IIT Kanpur, IIT Madras, or IIST Trivandrum aerospace/UAV labs.
 
 ---
 
