@@ -8,7 +8,7 @@
 
 | Person | Role |
 |--------|------|
-| **You** | Project lead — UE5, Blueprints, 3D engine, terrain, rendering |
+| **Adhiraj** | Project lead — UE5, Blueprints, 3D engine, terrain, rendering |
 | **Rajguru** | Python & Research Engineer — aerodynamics, TCP bridge, telemetry, PID, RL |
 
 17–18 year old students from Goa, India. Starting First Year engineering in ~2 months. Goal: build an impressive open-source project over 18 months to land a research internship at IIT Bombay, IIT Kanpur, IIT Madras, or IIST Trivandrum aerospace/UAV labs.
@@ -93,7 +93,7 @@ Math reference: Anderson — *Fundamentals of Aerodynamics*, Chapters 1–4 only
 ### Phase 1 — Months 1–3
 **Learn Python and Git basics**
 
-| You | Rajguru |
+| Adhiraj | Rajguru |
 |-----|---------|
 | Python from scratch | Python from scratch |
 | CS Dojo · freeCodeCamp · Kaggle | Same resources — sync weekly |
@@ -106,7 +106,7 @@ Math reference: Anderson — *Fundamentals of Aerodynamics*, Chapters 1–4 only
 ### Phase 2 — Months 3–7
 **You learn UE5. Rajguru builds the Python aerodynamics model.**
 
-| You | Rajguru |
+| Adhiraj | Rajguru |
 |-----|---------|
 | UE5 editor basics | Anderson Ch 1–4 (math background) |
 | Blueprints fundamentals | Lift / drag / thrust in Python |
@@ -120,7 +120,7 @@ Math reference: Anderson — *Fundamentals of Aerodynamics*, Chapters 1–4 only
 ### Phase 3 — Months 7–13
 **Build the actual simulation. Connect Python to UE5.**
 
-| You | Rajguru |
+| Adhiraj | Rajguru |
 |-----|---------|
 | Chaos Physics + custom aero forces | TCP socket client (Python side) |
 | ISRO Bhuvan terrain heightmaps | Real-time telemetry logger |
@@ -135,7 +135,7 @@ Math reference: Anderson — *Fundamentals of Aerodynamics*, Chapters 1–4 only
 ### Phase 4 — Months 13–18
 **PID autopilot, reinforcement learning, polish, demo.**
 
-| You | Rajguru |
+| Adhiraj | Rajguru |
 |-----|---------|
 | Visual polish + UI refinement | PID autopilot (Brian Douglas YT series) |
 | RunPod demo video render | Stable Baselines 3 RL integration |
@@ -148,7 +148,7 @@ Math reference: Anderson — *Fundamentals of Aerodynamics*, Chapters 1–4 only
 
 ## Resources
 
-### You (UE5 focus)
+### Adhiraj (UE5 focus)
 - [Unreal Sensei beginner course](https://www.youtube.com/@UnrealSensei)
 - [Epic official learning portal](https://dev.epicgames.com/community/learning)
 - [Matt Aspland Blueprints channel](https://www.youtube.com/@MattAspland)
