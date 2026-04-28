@@ -1,6 +1,6 @@
 # UE5 Aerospace Simulation Platform — Project Context
 
-> Paste this at the start of any Claude chat to load full project context.
+
 
 ---
 
