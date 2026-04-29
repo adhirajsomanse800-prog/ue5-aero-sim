@@ -23,22 +23,33 @@ Built on real-world Indian terrain data (ISRO Bhuvan), this platform enables rea
 * **Engine:** Unreal Engine 5 (DLSS Enabled)
 * **API:** Python 3.10+ via TCP Socket
 * **Terrain:** ISRO Bhuvan DEM Data
+```mermaid
 graph LR
-    subgraph "Visual/Physics Body (UE5 Server)"
+    subgraph UE5 ["🖥️ Unreal Engine 5 Server"]
         A[Chaos Physics Engine] --> B[Telemetry Generator]
-        B -->|JSON Packet| C((TCP Socket Server))
-        D((TCP Socket Server)) -->|Command Input| A
+        B -->|JSON| C((● TCP Server))
+        D((● TCP Server)) -->|Command| A
     end
 
-    subgraph "Control Brain (Python Client)"
-        E((TCP Socket Client)) -->|Telemetry Data| F[Research Logic/PID/RL]
-        F -->|JSON Command| G((TCP Socket Client))
+    subgraph Python ["🐍 Python Control Brain"]
+        E((○ TCP Client)) -->|Telemetry| F[Research Logic/RL]
+        F -->|JSON| G((○ TCP Client))
     end
 
-    C -.->|60Hz Telemetry: Alt, Spd, HDG| E
-    G -.->|60Hz Commands: Throttle, Pitch, Roll| D
+    %% Flow Connections
+    C -.->|60Hz Data| E
+    G -.->|60Hz Ctrl| D
 
-    style A fill:#1a2a6c,color:#fff
-    style F fill:#fdbb2d,color:#000
-    style C fill:#fff,stroke:#1a2a6c
-    style E fill:#fff,stroke:#1a2a6c
+    %% --- GITHUB NATIVE STYLING ---
+    %% We use 'fill:none' so it matches GitHub's background perfectly
+    style UE5 fill:none,stroke:#38bdf8,stroke-width:1px,stroke-dasharray: 5 5
+    style Python fill:none,stroke:#fbbf24,stroke-width:1px,stroke-dasharray: 5 5
+
+    classDef ue5Node fill:#1e293b,stroke:#38bdf8,stroke-width:2px,color:#38bdf8
+    classDef pyNode fill:#1e293b,stroke:#fbbf24,stroke-width:2px,color:#fbbf24
+    classDef socket fill:#0f172a,stroke:#a78bfa,stroke-width:2px,color:#a78bfa
+
+    class A,B ue5Node
+    class F pyNode
+    class C,D,E,G socket
+```
