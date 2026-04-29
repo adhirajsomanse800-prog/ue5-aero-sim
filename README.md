@@ -23,3 +23,22 @@ Built on real-world Indian terrain data (ISRO Bhuvan), this platform enables rea
 * **Engine:** Unreal Engine 5 (DLSS Enabled)
 * **API:** Python 3.10+ via TCP Socket
 * **Terrain:** ISRO Bhuvan DEM Data
+graph LR
+    subgraph "Visual/Physics Body (UE5 Server)"
+        A[Chaos Physics Engine] --> B[Telemetry Generator]
+        B -->|JSON Packet| C((TCP Socket Server))
+        D((TCP Socket Server)) -->|Command Input| A
+    end
+
+    subgraph "Control Brain (Python Client)"
+        E((TCP Socket Client)) -->|Telemetry Data| F[Research Logic/PID/RL]
+        F -->|JSON Command| G((TCP Socket Client))
+    end
+
+    C -.->|60Hz Telemetry: Alt, Spd, HDG| E
+    G -.->|60Hz Commands: Throttle, Pitch, Roll| D
+
+    style A fill:#1a2a6c,color:#fff
+    style F fill:#fdbb2d,color:#000
+    style C fill:#fff,stroke:#1a2a6c
+    style E fill:#fff,stroke:#1a2a6c
